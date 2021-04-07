@@ -56,4 +56,4 @@ spec:
         - path: /
           backend:
             serviceName: go-service
-            servicePort: 80
+            servicePort: 80  
