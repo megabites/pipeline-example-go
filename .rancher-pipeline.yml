@@ -9,6 +9,9 @@ stages:
         cd /go/src/github.com/rancher/pipeline-example-go
         go build -o bin/hello-server
         go test -cover
+      env:
+      PLUGIN_DEBUG: "true"
+      PLUGIN_INSECURE: "true" 
 - name: Publish
   steps:
   - publishImageConfig:
